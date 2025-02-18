@@ -1,4 +1,4 @@
-package br.com.itau.simulacaosaque;
+package br.com.banco.simulacaosaque;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

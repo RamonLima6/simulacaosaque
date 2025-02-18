@@ -1,4 +1,4 @@
-package br.com.itau.simulacaosaque;
+package br.com.banco.simulacaosaque;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

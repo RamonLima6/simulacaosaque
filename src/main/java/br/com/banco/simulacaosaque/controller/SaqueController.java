@@ -1,11 +1,12 @@
-package br.com.itau.simulacaosaque.controller;
+package br.com.banco.simulacaosaque.controller;
 
-import br.com.itau.simulacaosaque.service.SaqueService;
+import br.com.banco.simulacaosaque.model.QtdePorNota;
+import br.com.banco.simulacaosaque.service.SaqueService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
+import java.util.List;
 
 @RestController
 public class SaqueController {
@@ -17,7 +18,7 @@ public class SaqueController {
     }
 
     @GetMapping("/saque")
-    public Map<Integer, Integer> calcularSaque(@RequestParam int valor){
+    public List<QtdePorNota> calcularSaque(@RequestParam int valor){
         return saqueService.calcularSaque(valor);
     }
 }
